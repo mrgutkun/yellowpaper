@@ -1543,12 +1543,17 @@ C_1\equiv\{(X,Y)\in F_{\mathrm{p}}\times F_{\mathrm{p}}\mid Y^2=X^3+3\}\cup\{(0,
 We define a binary operation $+$ on $C_1$ with
 \begin{eqnarray}\label{eq:ec-addition}
 (X_1, Y_1) + (X_2, Y_2)&\equiv&\begin{cases}
-(X,Y)&\text{if}\ X_1\neq X_2\\
-(0,0)&\text{otherwise}
+(X_1, Y_1) &\text{if}\ (X_2, Y_2)=(0,0)\\
+(0, 0) &\text{if}\ (X_1, Y_1)=(X_2, -Y_2)\\
+(X', Y') &\text{if}\ (X_1, Y_1)=(X_2, Y_2)\\
+(X,Y)&\text{otherwise}
 \end{cases}\\
 X&\equiv&\lambda^2-X_1-X_2\\
 Y&\equiv&\lambda(X_1-X)-Y_1\\
-\lambda&\equiv&\frac{Y_2-Y_1}{X_2-X_1}
+\lambda&\equiv&\frac{Y_2-Y_1}{X_2-X_1}\\
+X'&\equiv&\lambda'^2-2X_1\\
+Y'&\equiv&\lambda'(X_1-X')-Y_1\\
+\lambda'&\equiv&\frac{3X_1^2+1}{2Y_1}
 \end{eqnarray}
 
 $(C_1,+)$ is known to form a group. We define the scalar multiplication $\cdot$ with
